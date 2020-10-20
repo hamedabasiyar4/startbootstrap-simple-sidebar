@@ -3,14 +3,19 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
-
+body{
+  font-family: Shabnam, serif;
+  font-size: 13px;
+  direction: rtl;
+  text-align: right;
+}
  #wrapper {
     overflow-x: hidden;
  }
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -15rem;
+  margin-right: -15rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
@@ -31,12 +36,12 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 @media (min-width: 768px) {
   #sidebar-wrapper {
-    margin-left: 0;
+    margin-right: 0;
   }
 
   #page-content-wrapper {
@@ -45,6 +50,38 @@
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
+    margin-right: -15rem;
   }
+}
+
+
+nav li > a{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dropdown-toggle::after{
+  display: none !important;
+}
+.dropdown-toggle::before{
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}
+
+.dropdown-menu{
+  text-align: right;
+}
+
+nav{
+  box-shadow: -1px 3px 4px 0px #aaa;
+}
+
+#sidebar-wrapper{
+  box-shadow: -1px 1px 4px 0px #e4e3e3;
 }
