@@ -1,1 +1,5 @@
 node_modules
+.idea/codeStyles/codeStyleConfig.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/startbootstrap-simple-sidebar.iml
