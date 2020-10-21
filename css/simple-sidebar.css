@@ -5,7 +5,7 @@
  */
 body{
   font-family: Shabnam, serif;
-  font-size: 13px;
+  font-size: 14px;
   direction: rtl;
   text-align: right;
 }
@@ -84,4 +84,20 @@ nav{
 
 #sidebar-wrapper{
   box-shadow: -1px 1px 4px 0px #e4e3e3;
+}
+
+.list-group-item.active{
+  background-color: #dae0e5!important;
+  color: black;
+  border-color: rgba(0,0,0,.125);
+}
+
+.logo{
+  width: 70px;
+  margin-left: 10px;
+}
+
+.sidebar-heading  span{
+  padding-top: 22px;
+  display: inline-block;
 }
