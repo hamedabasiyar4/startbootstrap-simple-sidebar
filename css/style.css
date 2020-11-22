@@ -35,6 +35,10 @@
   #sidebar-wrapper{
       min-width: 240px; 
   }
+  .navbar, #sidebar-wrapper{
+    background-image: url('../images/bg21.png');
+    background-size: cover;
+  }
   .card-header > h5 > button{
     width: 100%;
     text-align: right;
